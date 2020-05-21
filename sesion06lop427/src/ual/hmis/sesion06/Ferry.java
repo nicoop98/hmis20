@@ -49,6 +49,9 @@ public class Ferry {
 			return false;
 		}
 		
+		// -----------------GETTERS Y SETTERS --------------------------
+		
+		
 		public int getNumMaxPasajeros() {
 			return numMaxPasajeros;
 		}
@@ -96,6 +99,16 @@ public class Ferry {
 		public void setVehiculos(ArrayList<Vehiculo> vehiculos) {
 			this.vehiculos = vehiculos;
 		}
+
+		public int getNumMaxVehiculos() {
+			return numMaxVehiculos;
+		}
+
+		public void setNumMaxVehiculos(int numMaxVehiculos) {
+			this.numMaxVehiculos = numMaxVehiculos;
+		}
+		
+		
 		
 		
 }
