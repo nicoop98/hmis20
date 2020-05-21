@@ -1,7 +1,6 @@
 package ejercicio5;
 
 import java.util.ArrayList;
-import java.util.*;
 
 public class Profesor {
 
