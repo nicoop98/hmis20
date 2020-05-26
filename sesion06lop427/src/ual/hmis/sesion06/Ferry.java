@@ -21,9 +21,10 @@ public class Ferry {
 	
 		// Embarca un vehículo añadiéndolo a la lista
 		public boolean embarcarVehiculo (Vehiculo v) {
-			vehiculos.add(v);
-			if (vehiculos.contains(v)) return true;
-			return false;
+			this.pesoTotalVehiculos = this.pesoTotalVehiculos + v.getPeso();
+			this.numTotalPasajeros = this.numTotalPasajeros + v.getNumPasajeros();
+
+			return vehiculos.add(v);
 		}
 		
 		// devuelve el número total de vehículos embarcados
@@ -39,7 +40,7 @@ public class Ferry {
 		
 		// verdadero si el número total de los vehículos supera el máximo
 		public boolean superadoMaximoVehiculos() {
-			if (numTotalVehiculos > numMaxVehiculos) return true;
+			if (this.vehiculos.size() > numMaxVehiculos) return true;
 			return false;
 		}
 		

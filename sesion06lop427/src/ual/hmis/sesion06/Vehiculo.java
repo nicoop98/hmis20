@@ -6,10 +6,10 @@ public class Vehiculo {
 	private int numRuedas;
 	private int peso;
 	
-	public Vehiculo() {
-		this.peso = 0;
-		this.numPasajeros = 5;
-		this.numRuedas = 4;
+	public Vehiculo(int peso, int numPasajeros, int numRuedas) {
+		this.peso = peso;
+		this.numPasajeros = numPasajeros;
+		this.numRuedas = numRuedas;
 	}
 	
 	public int getNumPasajeros() {
